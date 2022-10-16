@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Auto World</title>
+<meta name="viewport" content="width=device-width initial-scale=1" />
+<link rel="stylesheet"href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="icon" type="image/jpg" href="../images/PicsArt_08-02-12.34.41.jpg" />
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+<div>
+
+
+
+
+<ul class="nav">
+  <a href="../index.html" >Home</a>
+<a href="models.html" >All Company</a>
+  <a href="cars.html" >All Cars</a>
+  <a href="Aboutus.html" >About us</a>
+ <a href="contact.html" >Contact us</a>
+ <a href="insurance.html" >Insurance</a>
+ <a href="camparison.html">Comparison</a>
+ <a href="#" title="daily deals" style="float:right;">Daily Deals </a>
+<a href="login.html" title="Log In" style="float:right;">LogIn</a>
+</ul>
+<br />
+<br />
+<br />
+<br />
+<center><div style="color:#FFF;"><h1>Comparison</h1></div></center>
+<hr>
+<br><br><br><div>
+<table  style="float:left;margin-left:100px;">
+	<tr>
+    	<td class="" >
+		<div class="form-group">
+<select onClick="cmprac()" id="p1" style="width:300px;height:50px;cursor:pointer;"  class="form-control" placeholder="Used or New" required >
+<option value="Suzuki Swift">Suzuki Swift</option>
+                <option value="Toyota RAV4">Toyota RAV4</option>
+                <option value="Toyota Hilux">Toyota Hilux</option>
+                <option value="Toyota Fortuner">Toyota Fortuner</option>
+                <option value="Toyota Avalon">Toyota Avalon</option>
+                <option value="Toyota Corolla">Toyota Corolla</option>
+                <option value="Honda BR-V">Honda BR-V</option>
+                <option value="Honda Vezel">Honda Vezel</option>
+                <option value="Honda Civic">Honda Civic</option>
+                <option value="Honda Amaze">Honda Amaze</option>
+                <option value="Honda Accord">Honda Accord</option>
+                <option value="Suzuki Vitara">Suzuki Vitara</option>
+                <option value="Suzuki Kizashi">Suzuki Kizashi</option>
+                <option value="Suzuki WagonR">Suzuki WagonR</option>
+                <option value="Suzuki Jimny">Suzuki Jimny</option>
+</select>
+</div>
+        	
+            
+        </td>
+		</table>
+        <table style="text-align:right;float:right;margin-right:160px;">
+      
+        <td class="" >
+         <div class="form-group">
+<select id="p2" onClick="cmpra()" style="width:300px;height:50px;cursor:pointer;"  class="form-control" placeholder="Used or New" required >
+
+                <option value="Suzuki Jimny">Suzuki Jimny</option>
+                <option value="Toyota RAV4">Toyota RAV4</option>
+                <option value="Toyota Hilux">Toyota Hilux</option>
+                <option value="Toyota Fortuner">Toyota Fortuner</option>
+                <option value="Toyota Avalon">Toyota Avalon</option>
+                <option value="Toyota Corolla">Toyota Corolla</option>
+                <option value="Honda BR-V">Honda BR-V</option>
+                <option value="Honda Vezel">Honda Vezel</option>
+                <option value="Honda Civic">Honda Civic</option>
+                <option value="Honda Amaze">Honda Amaze</option>
+                <option value="Honda Accord">Honda Accord</option>
+                <option value="Suzuki Vitara">Suzuki Vitara</option>
+                <option value="Suzuki Kizashi">Suzuki Kizashi</option>
+                <option value="Suzuki WagonR">Suzuki WagonR</option>
+                
+                <option value="Suzuki Swift">Suzuki Swift</option>
+</select>
+</div>
+        	
+           
+        </td>
+    </tr>
+	
+</table></div><br>
+<script type="text/javascript">
+function cmprac()
+{
+	var pro1 = document.getElementById("p1").value;	
+	var pro2 = document.getElementById("p2").value;
+
+	if (pro1=="Toyota RAV4" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/RAV-4.png"/>';
+		document.getElementById("Yeara").innerHTML= "2011";
+		document.getElementById("Colora").innerHTML="Grey";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="1.3L VVTI";
+		document.getElementById("Reliabilitya").innerHTML="Exellent";
+		document.getElementById("Pricea").innerHTML="1,524,000";
+	}
+	else if (pro1=="Toyota Hilux")
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Toyota Hilux.png"/>';
+		document.getElementById("Yeara").innerHTML= "2014";
+		document.getElementById("Colora").innerHTML="Blue";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="1KD - FTV";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="1,834,000";
+	}
+	else if (pro1=="Toyota Fortuner")
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Toyota Fortuner.png"/>';
+		document.getElementById("Yeara").innerHTML= "2011";
+		document.getElementById("Colora").innerHTML="Brown";
+		document.getElementById("BodyTypea").innerHTML="SUV";
+		document.getElementById("Enginea").innerHTML="2TR-FE";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="7,600,000";
+	}
+	else if (pro1=="Toyota Avalon")
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Toyota Avalon.png"/>';
+		document.getElementById("Yeara").innerHTML= "2013";
+		document.getElementById("Colora").innerHTML="Black";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="1.3L VVTI";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="7,799,000";
+	}
+	else if (pro1=="Toyota Corolla" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Toyota Corolla.png"/>';
+		document.getElementById("Yeara").innerHTML= "2011";
+		document.getElementById("Colora").innerHTML="Red";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="1.3 VVTI";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="1,399,000";
+	}
+	else if (pro1=="Honda BR-V" )
+	{
+	    document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Honda BR-V.png"/>';
+		document.getElementById("Yeara").innerHTML= "2012";
+		document.getElementById("Colora").innerHTML="Red";
+		document.getElementById("BodyTypea").innerHTML="Sport Utility, SUV";
+		document.getElementById("Enginea").innerHTML="I-VTec";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="5,549,000";
+	}
+	else if (pro1=="Honda Vezel" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Honda Vezel.png "/>';
+		document.getElementById("Yeara").innerHTML= "2015";
+		document.getElementById("Colora").innerHTML="Blue";
+		document.getElementById("BodyTypea").innerHTML="HatchBack";
+		document.getElementById("Enginea").innerHTML="1.6L I4";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="4,349,000";
+	}
+	else if (pro1=="Honda Civic" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="220px" src="../images/Honda Civic.png"/>';
+		document.getElementById("Yeara").innerHTML= "2016";
+		document.getElementById("Colora").innerHTML="Black";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="I-VTEC";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="2,052,700";
+	}
+	else if (pro1=="Honda Amaze" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="400px" height="200px" src="../images/Honda Amaze.png"/>';
+		document.getElementById("Yeara").innerHTML= "2014";
+		document.getElementById("Colora").innerHTML="Blue";
+		document.getElementById("BodyTypea").innerHTML="HatchBack";
+		document.getElementById("Enginea").innerHTML="SOHC i-VTEC";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="4,300,000";
+	}
+	else if (pro1=="Honda Accord" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Honda Accord.png"/>';
+		document.getElementById("Yeara").innerHTML= "2011";
+		document.getElementById("Colora").innerHTML="Red";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="16 Valve DOHC-iVTEC";
+		document.getElementById("Reliability").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="5,949,000";
+	}
+	else if (pro1=="Suzuki Vitara" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Vitara.png"/>';
+		document.getElementById("Yeara").innerHTML= "2016";
+		document.getElementById("Colora").innerHTML="SEA GREEN";
+		document.getElementById("BodyTypea").innerHTML="SUV";
+		document.getElementById("Enginea").innerHTML="3.5L V6";
+		document.getElementById("Reliabilitya").innerHTML="Good";
+		document.getElementById("Pricea").innerHTML="3,949,000";
+	}
+	else if (pro1=="Suzuki Kizashi" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Kizashi.png"/>';
+		document.getElementById("Yeara").innerHTML= "2012";
+		document.getElementById("Colora").innerHTML="Black";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="2.0L I4";
+		document.getElementById("Reliabilitya").innerHTML="NA";
+		document.getElementById("Pricea").innerHTML="3,529,000";
+	}
+	else if (pro1=="Suzuki WagonR" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Suzuki wagon R.png"/>';
+		document.getElementById("Yeara").innerHTML= "2016";
+		document.getElementById("Colora").innerHTML="Blue";
+		document.getElementById("BodyTypea").innerHTML="SUV";
+		document.getElementById("Enginea").innerHTML="3.5L V6";
+		document.getElementById("Reliabilitya").innerHTML="Average";
+		document.getElementById("Pricea").innerHTML="1,949,000";
+	}
+	else if (pro1=="Suzuki Jimny" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Jimny.png"/>';
+		document.getElementById("Yeara").innerHTML= "2013";
+		document.getElementById("Colora").innerHTML="Black";
+		document.getElementById("BodyTypea").innerHTML="Sedan";
+		document.getElementById("Enginea").innerHTML="2.0L I4";
+		document.getElementById("Reliabilitya").innerHTML="Good";
+		document.getElementById("Pricea").innerHTML="2,649,000";
+	}
+	else if (pro1=="Suzuki Swift" )
+	{
+		document.getElementById("Modela").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Swift.png"/>';
+		document.getElementById("Yeara").innerHTML= "2014";
+		document.getElementById("Colora").innerHTML="Blue";
+		document.getElementById("BodyTypea").innerHTML="HatchBack";
+		document.getElementById("Enginea").innerHTML="2.0l I4";
+		document.getElementById("Reliabilitya").innerHTML="Excellent";
+		document.getElementById("Pricea").innerHTML="23,50,000";
+	}
+	
+	return cmpr;
+}
+function cmpra(){
+	var pro2=document.getElementById("p2").value;
+	
+	if (pro2=="Toyota RAV4" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/RAV-4.png"/>';
+		document.getElementById("Yearb").innerHTML= "2011";
+		document.getElementById("Colorb").innerHTML="Grey";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="1.3L VVTI";
+		document.getElementById("Reliabilityb").innerHTML="Exellent";
+		document.getElementById("Priceb").innerHTML="1,524,000";
+	}
+	else if (pro2=="Toyota Hilux" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Toyota Hilux.png"/>';
+		document.getElementById("Yearb").innerHTML= "2014";
+		document.getElementById("Colorb").innerHTML="Blue";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="1KD - FTV";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="1,834,000";
+	}
+	else if (pro2=="Toyota Fortuner" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Toyota Fortuner.png"/>';
+		document.getElementById("Yearb").innerHTML= "2011";
+		document.getElementById("Colorb").innerHTML="Brown";
+		document.getElementById("BodyTypeb").innerHTML="SUV";
+		document.getElementById("Engineb").innerHTML="2TR-FE";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="7,600,000";
+	}
+	else if (pro2=="Toyota Avalon" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Toyota Avalon.png"/>';
+		document.getElementById("Yearb").innerHTML= "2013";
+		document.getElementById("Colorb").innerHTML="Black";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="1.3L VVTI";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="7,799,000";
+	}
+	else if (pro2=="Toyota Corolla" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Toyota Corolla.png"/>';
+		document.getElementById("Yearb").innerHTML= "2011";
+		document.getElementById("Colorb").innerHTML="Red";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="1.3 VVTI";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="1,399,000";
+	}
+	else if (pro2=="Honda BR-V" )
+	{
+	    document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Honda BR-V.png"/>';
+		document.getElementById("Yearb").innerHTML= "2012";
+		document.getElementById("Colorb").innerHTML="Red";
+		document.getElementById("BodyTypeb").innerHTML="Sport Utility, SUV";
+		document.getElementById("Engineb").innerHTML="I-VTec";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="5,549,000";
+	}
+	else if (pro2=="Honda Vezel" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Honda Vezel.png "/>';
+		document.getElementById("Yearb").innerHTML= "2015";
+		document.getElementById("Colorb").innerHTML="Blue";
+		document.getElementById("BodyTypeb").innerHTML="HatchBack";
+		document.getElementById("Engineb").innerHTML="1.6L I4";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="4,349,000";
+	}
+	else if (pro2=="Honda Civic" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="220px" src="../images/Honda Civic.png"/>';
+		document.getElementById("Yearb").innerHTML= "2016";
+		document.getElementById("Colorb").innerHTML="Black";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="I-VTEC";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="2,052,700";
+	}
+	else if (pro2=="Honda Amaze" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="400px" height="180px" src="../images/Honda Amaze.png"/>';
+		document.getElementById("Yearb").innerHTML= "2014";
+		document.getElementById("Colorb").innerHTML="Blue";
+		document.getElementById("BodyTypeb").innerHTML="HatchBack";
+		document.getElementById("Engineb").innerHTML="SOHC i-VTEC";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="4,300,000";
+	}
+	else if (pro2=="Honda Accord" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Honda Accord.png"/>';
+		document.getElementById("Yearb").innerHTML= "2011";
+		document.getElementById("Colorb").innerHTML="Red";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="16 Valve DOHC-iVTEC";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="5,949,000";
+	}
+	else if (pro2=="Suzuki Vitara" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Vitara.png"/>';
+		document.getElementById("Yearb").innerHTML= "2016";
+		document.getElementById("Colorb").innerHTML="SEA GREEN";
+		document.getElementById("BodyTypeb").innerHTML="SUV";
+		document.getElementById("Engineb").innerHTML="3.5L V6";
+		document.getElementById("Reliabilityb").innerHTML="Good";
+		document.getElementById("Priceb").innerHTML="3,949,000";
+	}
+	else if (pro2=="Suzuki Kizashi" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Kizashi.png"/>';
+		document.getElementById("Yearb").innerHTML= "2012";
+		document.getElementById("Colorb").innerHTML="Black";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="2.0L I4";
+		document.getElementById("Reliabilityb").innerHTML="NA";
+		document.getElementById("Priceb").innerHTML="3,529,000";
+	}
+	else if (pro2=="Suzuki WagonR" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Suzuki wagon R.png"/>';
+		document.getElementById("Yearb").innerHTML= "2016";
+		document.getElementById("Colorb").innerHTML="Blue";
+		document.getElementById("BodyTypeb").innerHTML="SUV";
+		document.getElementById("Engineb").innerHTML="3.5L V6";
+		document.getElementById("Reliabilityb").innerHTML="Average";
+		document.getElementById("Priceb").innerHTML="1,949,000";
+	}
+	else if (pro2=="Suzuki Jimny" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Jimny.png"/>';
+		document.getElementById("Yearb").innerHTML= "2013";
+		document.getElementById("Colorb").innerHTML="Black";
+		document.getElementById("BodyTypeb").innerHTML="Sedan";
+		document.getElementById("Engineb").innerHTML="2.0L I4";
+		document.getElementById("Reliabilityb").innerHTML="Good";
+		document.getElementById("Priceb").innerHTML="2,649,000";
+	}
+	else if (pro2=="Suzuki Swift" )
+	{
+		document.getElementById("Modelb").innerHTML='<img width="330px" height="200px" src="../images/Suzuki Swift.png"/>';
+		document.getElementById("Yearb").innerHTML= "2014";
+		document.getElementById("Colorb").innerHTML="Blue";
+		document.getElementById("BodyTypeb").innerHTML="HatchBack";
+		document.getElementById("Engineb").innerHTML="2.0l I4";
+		document.getElementById("Reliabilityb").innerHTML="Excellent";
+		document.getElementById("Priceb").innerHTML="23,50,000";
+	}
+	return cmpr;
+}
+</script>
+
+<br>
+<br>
+<br>
+<table class="" style="color:#FFF;margin-left:80px;">
+<tr>
+<td class="col-md-4" id="nam" style="font-size:20px;"> Product 1</td>
+<td class="col-md-4" style=" font-weight:bolder; color:rgb(204,204,204); text-align:center;font-size:22px;"> Specifications</td>
+<td class="col-md-4" id="nam1" style="font-size:22px;">Product 2</td>
+</tr>
+    
+<tr>
+<td class="col-md-4" id="Modela"><img width="330px" height="150px" src="../images/Suzuki Swift.png"/></td>
+<td class="col-md-4"  style=" font-weight:bolder; color:rgb(204,204,204); text-align:center">Images</td>
+<td class="col-md-4" id="Modelb"><img width="330px" height="150px" src="../images/Suzuki Jimny.png"/> </td>
+</tr>
+
+<tr>
+<td class="col-md-4" id="Colora" style="font-size:18px;">Blue</td>
+<td class="col-md-4"  style=" font-weight:bolder; color:rgb(204,204,204); text-align:center">Color</td>
+<td class="col-md-4" id="Colorb" style="font-size:18px;">Black</td>
+</tr>
+
+<tr>
+<td class="col-md-4" id="BodyTypea" style="font-size:18px;">HatchBack</td>
+<td class="col-md-4" style=" font-weight:bolder; color:rgb(204,204,204); text-align:center">Body Type</td>
+<td class="col-md-4" id="BodyTypeb" style="font-size:18px;">Sedan</td>
+</tr>
+
+<tr>
+<td class="col-md-4" id="Enginea" style="font-size:18px;">2.0l I4</td>
+<td class="col-md-4" style=" font-weight:bolder; color:rgb(204,204,204); text-align:center">Engine</td>
+<td class="col-md-4" id="Engineb" style="font-size:18px;">2.0L I4</td>
+</tr>
+
+<tr>
+<td class="col-md-4" id="Reliabilitya" style="font-size:18px;">Excellent</td>
+<td class="col-md-4" style=" font-weight:bolder; color:rgb(204,204,204); text-align:center"> Reliability</td>
+<td class="col-md-4" id="Reliabilityb" style="font-size:18px;">Good</td>
+</tr>
+
+<tr>
+<td class="col-md-4" id="Yeara" style="font-size:18px;">2014</td>
+<td class="col-md-4" style=" font-weight:bolder; color:rgb(204,204,204); text-align:center">Year</td>
+<td class="col-md-4" id="Yearb" style="font-size:18px;">2013</td>
+</tr>
+
+<tr>
+<td class="col-md-4" id="Pricea" style="font-size:18px;">250,000</td>
+<td class="col-md-4" style=" font-weight:bolder; color:rgb(204,204,204); text-align:center">Price</td>
+<td class="col-md-4" id="Priceb" style="font-size:18px;">2,649,000</td>
+</tr>
+
+</table>
+</center>
+<div class="clearfix"></div>
+<br><br><br><br><br>
+
+<footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify">We have a strong and committed sales staff with many years of experience satisfying our customers' needs. Feel free to browse our inventory online, request more information about vehicles, set up a test drive or inquire about financing!</p>
+			 <a class="btn btn-info" style="color:white;" href="Aboutus.html" >More About Us...</a>
+          </div>
+
+              <div class="col-xs-6 col-md-3">
+            <h6>Company</h6>
+            <ul class="footer-links">
+              <li><a href="toyotadetail.html">Toyota</a></li>
+              <li><a href="hondadetail.html">Honda</a></li>
+              <li><a href="suzukidetail.html">Suzuki</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="Aboutus.html">About Us</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href=".">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        
+          <div class="col-md-12 col-sm-12 col-xs-12" style="text-align:Center;">
+            <p class="copyright-text" style="text-align:Center;">© 2020 Auto World Pakistan. All rights reserved.</p>
+          </div>
+
+         
+      </div>
+</footer>
+   </div>
+   </div>
+</body>
+</html>
